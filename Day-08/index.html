@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* tag selecotor:
+        
+        selector {
+            property: value;
+        }
+        example:
+
+        h1 {
+            color:red;
+        }
+        p{
+             color:yellow;
+        }
+        */
+        h1{
+            color: red;
+        }
+
+
+        /* id selctor  
+         #idname {
+            property:value;
+         }
+        */
+        #mtag{
+            color: green;
+            background-color: blue;
+        }
+
+        /* class selecots 
+        .clasname{
+            property: value;
+
+        }
+
+        */
+        .mycls{
+            background-color: yellow;
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .bg-yellow{
+            background-color: yellow;
+        }
+
+
+        .p{
+            color: chocolate;
+        }
+        .fs{
+            background-color: blueviolet;
+        }
+        
+        /* universal sleecots * 
+         */
+        *{
+            /* font-size: 60px; */
+            /* background-color:  #000 !important; */
+        }
+
+        /* GROUPINFG OF SELECOTS  */
+        h5 , h6{
+            font-size: 50px;
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="bg-yellow">Selectors in CSS</h1>
+    <ol>
+        <li>Tag</li>
+        <li>Id</li>
+        <li>Class</li>
+        <li>Universal</li>
+        <li>Group</li>
+    </ol>
+    <h2>Hi 1</h2>
+    <h2 id="mytag ">Hi 2</h2>
+    <h2 id="mtag">Hi 3</h2>
+
+    <h3  class="bg-yellow" >Hi 1st h3</h3>
+    
+    <h3 class="bg-red">2nd h3</h3>
+    <h3 class="bg-yellow bg-red ">Hi 3RD h3</h3>
+    <!-- tag Selectors 
+    
+        selector {
+            property: value;
+        }
+        example:
+
+        h1 {
+            color:red;
+        }
+        p{
+             color:yellow;
+        }
+    
+    
+    
+    -->
+    
+<h4 class="p">A</h4>
+<h4 class="fs">B</h4>
+<h4 class="p fs">C</h4>
+
+
+<h5>hi iam h5</h5>
+<h6>hi iam h6</h6>
+</body>
+</html>

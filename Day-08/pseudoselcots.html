@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selecots:</title>
+
+    <style>
+        /* Pseudo selectors 
+        
+        selectos:selectedvalue {
+
+        }
+
+        :hover, :foucs ,:active 
+        */
+        h1{
+            color: red;
+            background-color: black;
+        }
+        h1:hover{
+            color: black;
+            background-color: red;
+        }
+        a{
+            text-decoration: none;
+            color: cadetblue;
+            text-transform: capitalize;
+            border: 2px solid black;
+        }
+        a:hover{
+            color: rgb(251, 5, 5);
+            text-transform: uppercase;
+
+        }
+        a:active{
+            color: green;
+
+        }
+        a:visited{
+            color: darkblue;
+        }
+
+        input:focus{
+            background-color: red;
+        }
+
+
+        /* pseudo clssases:  */
+
+        p::before{
+            background-color:red;
+            content: "hi";
+        }
+        p::after{
+            background-color:green;
+            content: "bye";
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Welcome to the Pseudo Selecots</h1>
+
+    <a href="https://www.google.com">go to google</a>
+
+    <input type="text">
+
+
+
+    <!-- Pseudo Classes 
+    
+    
+    selector::after/befor{
+
+    }
+    -->
+
+    <p>content of P</p>
+
+
+</body>
+</html>
