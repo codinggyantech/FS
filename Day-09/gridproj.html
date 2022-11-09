@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid project</title>
+    <style>
+        .grid-container{
+            background-color: azure;
+            /* height: 90vh; */
+        border: 1px solid black;
+    
+    
+        display: grid;
+        /* grid-template-columns: 100px 100px 100px 100px; */
+        grid-template-columns: auto auto auto auto auto;
+        
+        /* row-gap: 10px;
+        column-gap: 20px;
+        grid-gap: 30px; */
+        grid-template-rows: auto auto auto auto ;
+        }
+        .item{
+            /* width: 100px; */
+            /* height: 100px; */
+            padding: 30px;
+        }
+        .on{
+            background-color: red;
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+        } .to{
+            background-color: green;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .th{
+            background-color: aqua;
+        }
+        .fr{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item on">1</div>
+        <div class="item to">2</div>
+        <div class="item th">3</div>
+        <div class="item fr">4</div>
+        <div class="item fi">5</div>
+        <div class="item si">6</div>
+        <div class="item sv">7</div>
+        <div class="item ei">8</div>
+        <div class="cssgrid">CSS GRID Layout</div>
+        <div class="item ni">9</div>
+        <div class="item tn">10</div>
+        <div class="item ele">11</div>
+        <div class="item twe">12</div>
+       
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID learning</title>
+<style>
+    .grid-container{
+        background-color: azure;
+        /* height: 100vh; */
+    border: 1px solid black;
+
+
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr 1; */
+
+
+    grid-template-areas: "head ads main main"
+                        "sidebar sidebar main main"
+                        "sidebar  sidebar main main"
+                        "footer footer main main"
+    
+    ;
+   
+    grid-gap: 10px;
+    }
+    .item{
+        /* width: 100px; */
+        /* height: 100px; */
+        padding: 40px;
+    }
+    .on{
+        background-color: red;
+        grid-area: head;
+       
+    }
+     .to{
+        background-color: green;
+        border: 2px solid yellow;
+        grid-area: sidebar;
+    }
+    .th{
+        background-color: aqua;
+        grid-area: main;
+    }
+    .fr{
+        background-color: chocolate;
+        grid-area: footer;
+    }
+    .ads{
+        background-color: darkblue;
+        grid-area: ads;
+    }
+
+
+    @media screen and (max-width:700px){
+        .grid-container{
+            grid-template-areas: "head head "
+                        "sidebar  ads"
+                        "sidebar main "
+                        " footer footer"
+    
+    ;
+        }
+
+    }
+    @media screen and (max-width:400px){
+        .grid-container{
+            grid-template-areas: "head  "
+                        "sidebar  "
+                        "ads  "
+                        "main"
+                        "main"
+                        " footer"
+    
+    ;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="item on">Header</div>
+        <div class="item to">Sidebar</div>
+        <div class="item ads">ADS</div>
+        <div class="item th">Main</div>
+        <div class="item fr">Footer</div>
+       
+    </div>
+    
+</body>
+</html>
