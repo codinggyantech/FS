@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in js`</title>
+</head>
+<body onload="loaded()">
+    <h1 onm onmouseleave="mleft()" onmouseenter="menter()">Events in js</h1>
+    <button ondblclick="dblcl()" onclick="btnclicked()">clikc me</button>
+
+    <input onkeypress="keydown(event)" type="text" value = "" id="form">
+    <script>
+        function loaded(){
+            console.log("Page ready")
+        }
+        console.log("Events in  Js")
+// mouvse event 
+        btnclicked = ()=>{
+            console.log("clicked")
+        }
+        dblcl =()=>{
+            console.log("dblclicked")
+        }
+
+        menter = ()=>{
+            console.log("mouse entered")
+        }
+        mleft = ()=>{
+            console.log("mouse left")
+        }
+        keydown =(event)=>{
+            console.log("you pressed one key",event.key)
+            let val = document.getElementById("form").value;
+            console.log("value is",val)
+        }
+    </script>
+</body>
+</html>
