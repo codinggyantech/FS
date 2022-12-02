@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <style>
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#div1{
+    margin: 40px;
+    background-color: azure;
+}
+
+.cls{
+    background-color: black !important;
+}
+    </style>
+</head>
+<body>
+    <h1>Jquery Tutorials</h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, doloribus?</p>
+<!-- <button id="target">target id  to hide</button>
+<button id="target1">target id  to show</button> -->
+<button id="btn">onClick</button>
+<button id="ajax">ajax</button>
+
+<div class="mydiv">
+
+</div>
+
+<div id="div1">test content</div>
+
+<button id="ani">animate</button>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- <script src="./jquery-3.6.1.min.js"></script> -->
+
+    <script>
+//         $( "#target" ).toggle(function() {
+//   alert( "First handler for .toggle() called." );
+// }, function() {
+//   alert( "Second handler for .toggle() called." );
+// });
+
+// $('#target').click(
+//     ()=>{
+//         $('.mydiv').hide()
+//     }
+// )
+
+
+// $('#target1').click(
+//     ()=>{
+//         $('.mydiv').show()
+//     }
+// )
+$('#btn').click(
+    ()=>{
+        $('.mydiv').toggle()
+    }
+)
+
+$( "#ani" ).click(function() {
+  $( ".mydiv" ).animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+  }, 3000, function() {
+    // Animation complete.
+  });
+});
+
+
+$("#ajax").click(function(){
+  $.ajax({url: "https://jsonplaceholder.typicode.com/todos/1", success: function(result){
+    $("#div1").html(result);
+  }});
+});
+
+    </script>
+
+    </script>
+</body>
+</html>
