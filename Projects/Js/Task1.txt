@@ -1,0 +1,13 @@
+You need to build password generator.
+Input:
+your should ask for length for password: 
+(Hint: using prompt)
+o/p:
+random password: generated from (a-z) || [a-z,A-z, speicals]
+(Hint: use loops)
+example:
+enter length of pwd: 3
+your password is : xyk
+
+enter length of pwd: 6
+your password is : bheysw  | w@E4ud

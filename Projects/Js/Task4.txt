@@ -1,0 +1,9 @@
+ Calculator:
+ 1. addition
+ 2. sub
+ 3. mul
+ 4. div
+
+ HINT ( eval--function )
+ it takes string as input and 
+ perform your maths operations

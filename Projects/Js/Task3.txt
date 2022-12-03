@@ -1,0 +1,8 @@
+Spotify :
+to play songs:
+
+
+task to be done:
+1. create an object of songs urls
+2. create a play function 
+3. also add previous and next buttons

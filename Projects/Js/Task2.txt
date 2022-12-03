@@ -1,0 +1,5 @@
+I want a Clock Watch:
+
+o/p: 12:00:01
+
+HINt : setInterval function
