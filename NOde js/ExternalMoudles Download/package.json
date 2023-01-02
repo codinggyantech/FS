@@ -1,0 +1,15 @@
+{
+  "name": "externalmoudles-download",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "bablu",
+  "license": "ISC",
+  "dependencies": {
+    "pokemon": "^2.3.3"
+  }
+}
