@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "163a9bf3-a843-45ab-98e1-d53f719c113a",
+		"name": "Flask Employee Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/employee/1/Lokesh/SE/1/SEM/2/60/python",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"1",
+						"Lokesh",
+						"SE",
+						"1",
+						"SEM",
+						"2",
+						"60",
+						"python"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GEt single Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/employee/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Single Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/employee/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Single Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/employee/2/Raheem/SE/1/SEM/1/80/java",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"2",
+						"Raheem",
+						"SE",
+						"1",
+						"SEM",
+						"1",
+						"80",
+						"java"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updated Created Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":7,\r\n    \"name\":\"Pooja\",\r\n    \"desg\":\"Manager\",\r\n    \"did\":3,\r\n    \"dname\":\"FN\",\r\n    \"award\":5,\r\n    \"salary\":10,\r\n    \"skills\":\"no one\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
